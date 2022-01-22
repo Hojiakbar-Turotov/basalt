@@ -65,6 +65,8 @@ function darkLight() {
 // ********************
 function myFunction() {
     if ((screen.width < 1140) & count) {
-        window.scrollY = 0;
+        document.querySelector("header-head").classList.add("fixed-top");
+    } else{
+        document.querySelector("header-head").classList.remove("fixed-top");
     }
 }
