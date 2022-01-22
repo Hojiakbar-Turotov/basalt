@@ -9,35 +9,43 @@
 
 header {
   min-height: 100vh;
+  z-index: 1;
+}
+header * {
+  z-index: 1;
 }
 header .header-head {
+  z-index: 2;
+  position: relative;
   padding: 27px 0;
   border: 0.5px solid #00000040;
 }
 header .header-head .header-nav {
-  position: relative;
   display: none;
   transform: scale(0) translate(-100%, -100%);
-  transition: 1s;
+  transition: 3s;
 }
 header .header-head .header-nav.activemax {
-  transition: 3s;
   margin-left: auto;
   justify-content: space-between;
   display: block;
   transform: scale(1) translate(0, 0);
 }
 header .header-head .header-nav.activemin {
-  transition: 1s;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   transform: scale(1) translate(0, 0);
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 50px auto;
   width: 100%;
   height: 100vh;
+  z-index: 4;
+}
+header .header-head .header-nav.activemin .dropdown {
+  margin: 0 !important;
 }
 header .header-head .header-nav.activemin li {
   padding: 10px 0;
@@ -59,6 +67,15 @@ header .header-head .header-nav li a {
   text-decoration: none;
   color: #525252;
 }
+header .header-head #menubtn {
+  z-index: 9;
+}
+header .header-head #menubtn * {
+  z-index: 9;
+}
+header .header-body {
+  z-index: 3;
+}
 header .header-body .row .text1 {
   font-style: normal;
   font-weight: 500;
@@ -73,6 +90,12 @@ header .header-body .row .text2 {
   line-height: 77px;
   text-transform: uppercase;
   color: #fcd315;
+}
+header .header-body .row .position-relative {
+  z-index: 3;
+}
+header .header-body .row .position-relative * {
+  z-index: 3;
 }
 header .header-body .row img.play-icon {
   position: absolute;
@@ -233,7 +256,13 @@ footer .footer-body {
   background: #faf9f1;
 }
 #body.ligth header .header-nav.activemin {
-  background-color: #00000088;
+  background-color: #000000dd;
+}
+#body.ligth header .header-nav.activemin a {
+  color: #fff;
+}
+#body.ligth header .header-nav.activemin .dropdown ul {
+  background: #525252 !important;
 }
 #body.ligth main #o-kompanii {
   background-color: #efefef;
@@ -254,12 +283,18 @@ footer .footer-body {
   background: #faf9f140 !important;
 }
 #body.dark header .header-head .header-nav.activemin {
-  background-color: #00000088;
+  background-color: #ffffffdd;
 }
-#body.dark header .header-head a {
+#body.dark header .header-head .header-nav.activemin a {
+  color: #fcd20c;
+}
+#body.dark header .header-head .header-nav.activemin .dropdown ul {
+  background: #fff !important;
+}
+#body.dark header .header-head .header-nav a {
   color: #fff;
 }
-#body.dark header .header-head .dropdown ul {
+#body.dark header .header-head .header-nav .dropdown ul {
   background: #525252 !important;
 }
 #body.dark header .header-body .text1 {
