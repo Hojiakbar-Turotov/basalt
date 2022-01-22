@@ -62,3 +62,9 @@ function darkLight() {
         light++
     }
 }
+// ********************
+function myFunction() {
+    if (screen.width < 1140) {
+        window.scrollY = 0;
+    }
+}
