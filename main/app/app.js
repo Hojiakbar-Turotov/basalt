@@ -15,6 +15,8 @@ function pageMenu() {
     } else {
         if (count) {
             menuClass.remove("activemin");
+            menuClass.remove("d-flex");
+            menuClass.add("d-none");
             menubtnStyle.transform = 'rotate(180deg)';
             count++
         } else {
