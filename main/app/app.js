@@ -18,12 +18,14 @@ function pageMenu() {
             menuClass.remove("d-flex");
             menuClass.add("d-none");
             menubtnStyle.transform = 'rotate(180deg)';
+            document.getElementById("head-video").classList.remove("position-relative")
             count++
         } else {
             menuClass.add("activemin");
             menuClass.remove("d-none");
             menuClass.add("d-flex");
             menubtnStyle.transform = 'rotate(0deg)';
+            document.getElementById("head-video").classList.add("position-relative")
             count--
         }
     }

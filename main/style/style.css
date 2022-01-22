@@ -277,9 +277,6 @@ footer .footer-body {
 #body.dark header .header-head {
   background: #faf9f140 !important;
 }
-#body.dark header .header-head .header-nav a {
-  color: #fff;
-}
 #body.dark header .header-head .header-nav .dropdown ul {
   background: #525252 !important;
 }
