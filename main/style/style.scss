@@ -27,11 +27,10 @@ header {
                 transform: scale(1) translate(0, 0);
             }
             &.activemin {
-                // z-index: ;
                 position: fixed;
                 left: 0;
                 top: 0;
-                transform: scale(1) translate(0, 0);
+                transform: scale(1) translate(0, -10%);
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -310,7 +309,7 @@ footer {
                 background: #faf9f140 !important;
                 .header-nav {
                     &.activemin {
-                        background-color: #faf9f140;
+                        background-color: #292929;
                         a {
                             color: #fcd20c;
                         }
