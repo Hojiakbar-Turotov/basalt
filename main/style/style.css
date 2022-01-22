@@ -283,7 +283,7 @@ footer .footer-body {
   background: #faf9f140 !important;
 }
 #body.dark header .header-head .header-nav.activemin {
-  background-color: #ffffffdd;
+  background-color: #faf9f140;
 }
 #body.dark header .header-head .header-nav.activemin a {
   color: #fcd20c;
