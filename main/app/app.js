@@ -19,6 +19,8 @@ function pageMenu() {
             count++
         } else {
             menuClass.add("activemin");
+            menuClass.remove("d-none");
+            menuClass.add("d-flex");
             menubtnStyle.transform = 'rotate(0deg)';
             count--
         }
