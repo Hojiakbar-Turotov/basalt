@@ -2,7 +2,7 @@ let count = 0;
 let menuClass = document.getElementById("menu").classList;
 let menubtnStyle = document.getElementById("menubtn").style;
 function pageMenu() {
-    if (screen.width > 1140) {
+    if (screen.width < 1140) {
         if (count) {
             menuClass.add("activemax");
             menubtnStyle.transform = 'rotate(0deg)';

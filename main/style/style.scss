@@ -25,10 +25,14 @@ header {
             &.activemin {
                 transition: 1s;
                 position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
+                left: 0;
+                top: 0;
+                transform: scale(1) translate(0, 0);
                 flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
                 li {
                     padding: 10px 0;
                 }
@@ -248,6 +252,11 @@ footer {
     &.ligth {
         header {
             background: #faf9f1;
+            .header-nav{
+                &.activemin {
+                    background-color: #00000088;
+                }
+            }
         }
         main {
             #o-kompanii {
@@ -269,6 +278,11 @@ footer {
             background: #292929 !important;
             .header-head {
                 background: #faf9f140 !important;
+                .header-nav{
+                    &.activemin {
+                        background-color: #00000088;
+                    }
+                }
                 a {
                     color: #fff;
                 }
